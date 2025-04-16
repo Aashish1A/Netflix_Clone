@@ -21,10 +21,10 @@ const Navbar = () => {
   },[])
 
   return (
-    <div ref={navRef} className="w-full py-5 px-[6%] flex justify-between fixed text-[14px] bg-gradient-to-b from-[rgba(0,0,0,0.7)] via-[rgba(0,0,0,0.1)] to-transparent z-1">
+    <div ref={navRef} className="w-full py-5 px-[4%] md:py-5 md:px-[6%] flex justify-between fixed text-[14px] bg-gradient-to-b from-[rgba(0,0,0,0.7)] via-[rgba(0,0,0,0.1)] to-transparent z-1">
       <div className=" flex items-center gap-10">
         <img src={logo} alt="logo" className="w-24" />
-        <ul className="flex list-none gap-5 cursor-pointer">
+        <ul className="hidden md:flex list-none gap-2.5 sm:gap-5 cursor-pointer">
           <li>Home</li>
           <li>TV Shows</li>
           <li>Movies</li>

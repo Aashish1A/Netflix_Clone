@@ -9,12 +9,12 @@ const Footer = () => {
   return (
     <div className='py-7 px-[4%] max-w-5xl my-0 mx-auto'>
         <div className="flex gap-5 my-9 mx-0">
-            <img src={facebookIcon} alt="" className='w-7 cursor-pointer' />
-            <img src={instagramIcon} alt="" className='w-7 cursor-pointer' />
-            <img src={twitterIcon} alt="" className='w-7 cursor-pointer' />
-            <img src={youtubeIcon} alt="" className='w-7 cursor-pointer' />
+            <img src={facebookIcon} alt="" className='w-6 md:w-7 cursor-pointer' />
+            <img src={instagramIcon} alt="" className='w-6 md:w-7 cursor-pointer' />
+            <img src={twitterIcon} alt="" className='w-6 md:w-7 cursor-pointer' />
+            <img src={youtubeIcon} alt="" className='w-6 md:w-7 cursor-pointer' />
         </div>
-        <ul className='grid grid-cols-[repeat(4,auto)] gap-4 mb-7 list-none'>
+        <ul className='grid grid-cols-[repeat(2,auto)] md:grid-cols-[repeat(4,auto)] gap-2 md:gap-4 mb-7 list-none text-[14px] md:text-base'>
             <li>Audio Description</li>
             <li>Help Center</li>
             <li>Gift Cards</li>

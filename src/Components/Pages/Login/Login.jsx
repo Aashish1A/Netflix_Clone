@@ -28,9 +28,9 @@ const Login = () => {
     loading?<div className="w-full h-screen flex items-center justify-center">
       <img src={netflix_spinner} alt="" className='w-15' />
     </div>:
-    <div className="h-screen backgroundImage py-5 px-[8%]">
+    <div className="h-screen backgroundImage py-4 px-[5%] sm:py-5 sm:px-[8%]">
         <img src={logo} alt="" className='w-36' />
-        <div className="w-full max-w-md bg-[rgba(0,0,0,0.75)] rounded p-15 m-auto">
+        <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-md bg-[rgba(0,0,0,0.75)] rounded p-5 sm:p-15">
             <h1 className='text-8 font-medium mb-7'>{signState}</h1>
             <form>
                 {signState==='Sign Up'?<input value={name} onChange={(e)=>{setName(e.target.value)}} type="text" placeholder='Your name' className='w-full h-10 bg-[#333] text-white my-3 mx-0 border-0 outline-0 rounded py-4 px-5 text-base font-medium' />:<></>}

@@ -30,8 +30,8 @@ const TitleCards = ({ title, category }) => {
   }, []);
 
   return (
-    <div className="mt-10 mb-7">
-      <h2 className="mb-2 text-2xl font-bold">
+    <div className="mt-5 mb-0 md:mt-10 md:mb-7">
+      <h2 className="mb-2 text-base sm:text-xl md:text-2xl font-bold ">
         {title ? title : "Popular on Netflix"}
       </h2>
       <div
@@ -44,9 +44,9 @@ const TitleCards = ({ title, category }) => {
               <img
                 src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path}
                 alt=""
-                className="w-[240px] max-w-none rounded cursor-pointer"
+                className="w-[165px] sm:w-[200px] md:w-[240px] max-w-none rounded cursor-pointer"
               />
-              <p className="absolute bottom-2.5 right-2.5">
+              <p className="absolute bottom-2.5 right-2.5 text-[10px] sm:text-[12px] md:text-base">
                 {card.original_title}
               </p>
             </Link>
